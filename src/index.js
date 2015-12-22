@@ -21,11 +21,11 @@ class JD {
 
     static parseInt(val) {
       if (!_.isString(val)) {
-        throw new TypeError('Utils.parseInt expects a string.');
+        throw new TypeError('parseInt expects a string.');
       }
 
       if (!validator.isNumeric(val)) {
-        throw new Error(`Utils.parseInt cannot parse ${val} into and int.`);
+        throw new Error(`parseInt cannot parse ${val} into and int.`);
       }
 
       return _.parseInt(val, 10);
